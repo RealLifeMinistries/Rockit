@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "RockWeb(1)", "http://localhost:54532", "{22348267-9BDF-4B5E-BB6E-37B5FA770224}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		ProjectReferences = "{2b66458c-122c-4168-84e5-17ec9ad63558}|com.reallifeministries.GroupMatching.dll;{2adf3975-dae6-49c0-9a8d-ebd5fb2b887a}|com.reallifeministries.RockExtensions.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54532"
+		Debug.AspNetCompiler.PhysicalPath = "RockWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54532\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54532"
+		Release.AspNetCompiler.PhysicalPath = "RockWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54532\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "RockWeb\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.reallifeministries.RockExtensions", "com.reallifeministries.RockExtensions\com.reallifeministries.RockExtensions.csproj", "{2ADF3975-DAE6-49C0-9A8D-EBD5FB2B887A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.reallifeministries.GroupMatching", "com.reallifeministries.GroupMatching\com.reallifeministries.GroupMatching.csproj", "{2B66458C-122C-4168-84E5-17EC9AD63558}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22348267-9BDF-4B5E-BB6E-37B5FA770224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22348267-9BDF-4B5E-BB6E-37B5FA770224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22348267-9BDF-4B5E-BB6E-37B5FA770224}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{22348267-9BDF-4B5E-BB6E-37B5FA770224}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{2ADF3975-DAE6-49C0-9A8D-EBD5FB2B887A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ADF3975-DAE6-49C0-9A8D-EBD5FB2B887A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ADF3975-DAE6-49C0-9A8D-EBD5FB2B887A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ADF3975-DAE6-49C0-9A8D-EBD5FB2B887A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B66458C-122C-4168-84E5-17EC9AD63558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B66458C-122C-4168-84E5-17EC9AD63558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B66458C-122C-4168-84E5-17EC9AD63558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B66458C-122C-4168-84E5-17EC9AD63558}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

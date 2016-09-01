@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2ADF3975-DAE6-49C0-9A8D-EBD5FB2B887A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com.reallifeministries.RockExtensions</RootNamespace>
+    <AssemblyName>com.reallifeministries.RockExtensions</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotLiquid">
+      <HintPath>..\Rock\bin\DotLiquid.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\Rock\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RockWeb\Bin\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Rock">
+      <HintPath>..\Rock\bin\Rock.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\001_AddBirthdaySearchPageAndData .cs" />
+    <Compile Include="Migrations\TextInAttendance\002_FamilyCheckinWorkflowsForTextAttendance.cs" />
+    <Compile Include="Migrations\TextInAttendance\018_PrayerRequestFIX.cs" />
+    <Compile Include="Migrations\TextInAttendance\006_RemoveAttendanceWorkflowsForTextAttendance.cs" />
+    <Compile Include="Migrations\TextInAttendance\017_TopLevelWorkflowTypes.cs" />
+    <Compile Include="Migrations\TextInAttendance\016_PersonAttributeLastAttendancecode.cs" />
+    <Compile Include="Migrations\TextInAttendance\015_DefinedTypesForRECOVERYTextAttendance.cs" />
+    <Compile Include="Migrations\TextInAttendance\014_DefinedTypesForTHIRSTAttendance.cs" />
+    <Compile Include="Migrations\TextInAttendance\013_DefinedTypesForCDATextAttendance .cs" />
+    <Compile Include="Migrations\TextInAttendance\011_GenerateRECOVERYCodeWorkflow.cs" />
+    <Compile Include="Migrations\TextInAttendance\010_GenerateTHIRSTCodeWorkflow.cs" />
+    <Compile Include="Migrations\TextInAttendance\009_GenerateCDACodeWorkflow.cs" />
+    <Compile Include="Migrations\TextInAttendance\008_GeneratePFCodeWorkflow.cs" />
+    <Compile Include="Migrations\TextInAttendance\007_DefinedTypesForTextAttendance.cs" />
+    <Compile Include="Migrations\TextInAttendance\005_ReviewContactWorkflowsForTextAttendance.cs" />
+    <Compile Include="Migrations\TextInAttendance\004_HomegroupConnectionAddWorkflowsForTextAttendance.cs" />
+    <Compile Include="Migrations\TextInAttendance\003_PrayerRequestWorkflowsForTextAttendance.cs" />
+    <Compile Include="Migrations\TextInAttendance\001_StartWorkflowsForTextAttendance.cs" />
+    <Compile Include="Migrations\002_AddBirthdaySearchRoute.cs" />
+    <Compile Include="Migrations\TextInAttendance\012_AddGeneratedAttendanceCodePage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporting\Group\ScheduleSelect.cs" />
+    <Compile Include="Search\Person\BirthDate.cs" />
+    <Compile Include="Workflow\Action\AddPersonAndSpouseFromFields.cs" />
+    <Compile Include="Workflow\Action\GetPersonFromFields.cs" />
+    <Compile Include="Workflow\Action\TextInAttendance\PostAttendanceToGroup.cs" />
+    <Compile Include="Workflow\Action\TextInAttendance\RemoveLastAttendanceFromPerson.cs" />
+    <Compile Include="Workflow\Action\TextInAttendance\AddPrayerRequestToPerson.cs" />
+    <Compile Include="Workflow\Action\TextInAttendance\GetFamilyMembersFromPerson.cs" />
+    <Compile Include="Workflow\Action\TextInAttendance\RLMServiceTypes.cs" />
+    <Compile Include="Workflow\Action\TextInAttendance\GenerateAttendanceCode.cs" />
+    <Compile Include="Workflow\Action\TextInAttendance\ValidateAttendanceCode.cs" />
+    <Compile Include="Workflow\Action\ActivateWorkflow.cs" />
+    <Compile Include="Workflow\Action\AddPersonToGroup.cs" />
+    <Compile Include="Workflow\Action\AppendPrependToAttribute.cs" />
+    <Compile Include="Workflow\Action\AssignToGroupRole.cs" />
+    <Compile Include="Workflow\Action\SetAttributeFromHttpReferrer.cs" />
+    <Compile Include="Workflow\Action\DelayUntil.cs" />
+    <Compile Include="Workflow\Action\SetAttributeFromGroupLava.cs" />
+    <Compile Include="Workflow\Action\SetAttributeFromPersonLava.cs" />
+    <Compile Include="Workflow\Action\RedirectToPage.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
