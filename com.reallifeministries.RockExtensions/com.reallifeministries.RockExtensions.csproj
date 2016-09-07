@@ -32,17 +32,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotLiquid">
-      <HintPath>..\Rock\bin\DotLiquid.dll</HintPath>
+      <HintPath>..\RockWeb\Bin\DotLiquid.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
-      <HintPath>..\Rock\bin\EntityFramework.dll</HintPath>
+      <HintPath>..\RockWeb\Bin\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\RockWeb\Bin\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Rock">
-      <HintPath>..\Rock\bin\Rock.dll</HintPath>
+      <HintPath>..\RockWeb\Bin\Rock.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
